@@ -8,6 +8,7 @@
 #
 #
 
+
 class Board:
     """ A class for objects that represent an Eight Puzzle board.
     """
@@ -34,8 +35,6 @@ class Board:
                 self.blank_r = curRow
                 self.blank_c = curCol
 
-    ### Add your other method definitions below. ###
-
     def __repr__(self):
         reprStr = ""
 
@@ -53,3 +52,37 @@ class Board:
             reprStr += "\n"
 
         return reprStr
+
+    def move_blank(self, direction):
+        """
+        :param direction: "up", "down", "left", "right"
+        :return: True / False
+        """
+        if direction not in ["up", "down", "left", "right"]:
+            print("unknown direction:" + " " + direction)
+            return False
+
+        tmpMovedRow = 0
+        tmpMovedCol = 0
+
+        if direction == "up":
+            tmpMovedRow = self.blank_r - 1
+            tmpMovedCol = self.blank_c
+        elif direction == "down":
+            tmpMovedRow = self.blank_r + 1
+            tmpMovedCol = self.blank_c
+        elif direction == "left":
+            tmpMovedRow = self.blank_r
+            tmpMovedCol = self.blank_c - 1
+        elif direction == "right":
+            tmpMovedRow = self.blank_r
+            tmpMovedCol = self.blank_c + 1
+
+        if tmpMovedRow >= 0 and tmpMovedRow <= 2 and tmpMovedCol >= 0 and tmpMovedCol <= 2:
+            self.tiles[self.blank_r][self.blank_c] = self.tiles[tmpMovedRow][tmpMovedCol]
+            self.tiles[tmpMovedRow][tmpMovedCol] = 0
+            self.blank_r = tmpMovedRow
+            self.blank_c = tmpMovedCol
+            return True
+        else:
+            return False
