@@ -86,3 +86,13 @@ class Board:
             return True
         else:
             return False
+
+    def digit_string(self):
+        ansStr = ""
+        for lst in self.tiles:
+            for digit in lst:
+                ansStr += str(digit)
+        return ansStr
+
+    def copy(self):
+        return Board(self.digit_string())
