@@ -96,3 +96,19 @@ class Board:
 
     def copy(self):
         return Board(self.digit_string())
+
+    def num_misplaced(self):
+        """
+        counts and returns the number of tiles in the called Board object
+        that are not where they should be in the goal state
+        :return:
+        """
+        misPlacedCount = 0
+        for idx in range(9):
+            tmpRow = idx / 3
+            tmpCol = idx % 3
+
+            if self.tiles[tmpRow][tmpCol] != 0 and self.tiles[tmpRow][tmpCol] != idx:
+                misPlacedCount += 1
+
+        return misPlacedCount
