@@ -27,8 +27,8 @@
       <file leaf-file-name="searcher.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/searcher.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8890532" vertical-offset="119" max-vertical-offset="1065">
-              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.46745563" vertical-offset="689" max-vertical-offset="1365">
+              <caret line="67" column="12" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
               <folding>
                 <element signature="e#110#123#0" expanded="true" />
               </folding>
@@ -196,8 +196,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/searcher.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8890532" vertical-offset="119" max-vertical-offset="1065">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.46745563" vertical-offset="689" max-vertical-offset="1365">
+          <caret line="67" column="12" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
           <folding>
             <element signature="e#110#123#0" expanded="true" />
           </folding>

@@ -9,6 +9,7 @@
 import random
 from state import *
 
+
 class Searcher:
     """ A class for objects that perform random state-space
         search on an Eight Puzzle.
@@ -46,6 +47,25 @@ class Searcher:
                     return True
                 else:
                     return False
+
+    def add_state(self, new_state):
+        self.states.append(new_state)
+
+    def add_states(self, new_states):
+        for state in new_states:
+            if self.should_add(state):
+                self.add_state(state)
+
+    def next_state(self):
+        """ chooses the next state to be tested from the list of
+            untested states, removing it from the list and returning it
+        """
+        s = random.choice(self.states)
+        self.states.remove(s)
+        return s
+
+    def find_solution(self):
+        pass
 
     def __repr__(self):
         """ returns a string representation of the Searcher object
