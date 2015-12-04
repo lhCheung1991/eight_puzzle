@@ -1,14 +1,10 @@
 #
-# state.py (Final Project)
+# state.py
 #
 # A State class for the Eight Puzzle
 #
 # name: 
 # email:
-#
-# If you worked with a partner, put his or her contact info below:
-# partner's name:
-# partner's email:
 #
 
 from board import *
@@ -22,12 +18,32 @@ GOAL_TILES = [[0, 1, 2],
 # moving the blank cell in the specified direction
 MOVES = ['up', 'down', 'left', 'right']
 
+
 class State:
     """ A class for objects that represent a state in the state-space 
         search tree of an Eight Puzzle.
     """
     ### Add your method definitions here. ###
-        
+
+    def __init__(self, board, predecessor, move):
+        """
+
+        :param board: reference to the Board object associated with this state
+        :param predecessor:  a reference to the State object that comes before this state
+        :param move: a string representing the move that was needed to transition
+                    from the predecessor state to this state
+        :return:
+        """
+        self.board = board
+        self.predecessor = predecessor
+        self.move = move
+
+        if predecessor is None:
+            self.num_moves = 0    # # of moves from the initial state to this state
+        else:
+            self.num_moves = predecessor.num_moves + 1
+
+
 
     def __repr__(self):
         """ returns a string representation of the State object
