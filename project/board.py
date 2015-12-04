@@ -112,3 +112,6 @@ class Board:
                 misPlacedCount += 1
 
         return misPlacedCount
+
+    def __eq__(self, other):
+        return self.tiles == other.tiles
