@@ -43,7 +43,12 @@ class State:
         else:
             self.num_moves = predecessor.num_moves + 1
 
+    def is_goal(self):
+        """
 
+        :return:
+        """
+        return self.board.tiles == GOAL_TILES
 
     def __repr__(self):
         """ returns a string representation of the State object
