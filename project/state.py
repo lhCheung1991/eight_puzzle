@@ -66,7 +66,6 @@ class State:
         """ returns a string representation of the State object
             referred to by self.
         """
-        # You should *NOT* change this method.
         s = self.board.digit_string() + '-'
         s += self.move + '-'
         s += str(self.num_moves)
@@ -77,7 +76,6 @@ class State:
             by self) would create a cycle in the current sequence of moves,
             and False otherwise.
         """
-        # You should *NOT* change this method.
         state = self.predecessor
         while state != None:
             if state.board == self.board:
@@ -93,6 +91,4 @@ class State:
             max() will fail with an error when it tries to compare
             two [priority, state] pairs with the same priority.
         """
-        # You should *NOT* change this method.
         return True
-    
