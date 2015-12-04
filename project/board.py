@@ -1,14 +1,11 @@
 #
-# board.py (Final Project)
+# board.py
 #
 # A Board class for the Eight Puzzle
 #
 # name: 
 # email:
 #
-# If you worked with a partner, put his or her contact info below:
-# partner's name:
-# partner's email:
 #
 
 class Board:
@@ -29,8 +26,30 @@ class Board:
         self.blank_r = -1
         self.blank_c = -1
 
-        # Put your code for the rest of __init__ below.
-        # Do *NOT* remove our code above.
-
+        for idx, val in enumerate(digitstr):
+            curRow = idx / 3
+            curCol = idx % 3
+            self.tiles[curRow][curCol] = int(val)
+            if int(val) == 0:
+                self.blank_r = curRow
+                self.blank_c = curCol
 
     ### Add your other method definitions below. ###
+
+    def __repr__(self):
+        reprStr = ""
+
+        for lst in self.tiles:
+
+            for digit in lst:
+
+                if digit != 0:
+                    reprStr += str(digit)
+                    reprStr += " "
+                else:
+                    reprStr += "_"
+                    reprStr += " "
+
+            reprStr += "\n"
+
+        return reprStr
