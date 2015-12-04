@@ -23,8 +23,6 @@ class State:
     """ A class for objects that represent a state in the state-space 
         search tree of an Eight Puzzle.
     """
-    ### Add your method definitions here. ###
-
     def __init__(self, board, predecessor, move):
         """
 
@@ -49,6 +47,20 @@ class State:
         :return:
         """
         return self.board.tiles == GOAL_TILES
+
+    def generate_successors(self):
+        """
+        creates and returns a list of State objects for all successor states of the called State object
+        :return:
+        """
+        lstSuccessor = []
+        for move in MOVES:
+            nextBoard = self.board.copy()
+            if nextBoard.move_blank(move):
+                curSuccessorState = State(nextBoard, self, move)
+                lstSuccessor.append(curSuccessorState)
+
+        return lstSuccessor
 
     def __repr__(self):
         """ returns a string representation of the State object
