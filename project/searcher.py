@@ -23,10 +23,29 @@ class Searcher:
         :param depth_limit:
         :return:
         """
-        self.states = []
+        self.states = []    # list of untested states
         self.states.append(init_state)
         self.num_tested = 0    # keep track of how many states the Searcher tests
         self.depth_limit = depth_limit    # how deep in the state-space search tree the Searcher will go
+
+    def should_add(self, state):
+        """
+        takes a State object called state and returns True if the called Searcher
+        should add state to its list of untested states, and False otherwise.
+        :param state:
+        :return:
+        """
+        if state.creates_cycle():
+            return False
+        else:
+
+            if self.depth_limit == -1:
+                return True
+            else:
+                if state.num_moves <= self.depth_limit:
+                    return True
+                else:
+                    return False
 
     def __repr__(self):
         """ returns a string representation of the Searcher object
