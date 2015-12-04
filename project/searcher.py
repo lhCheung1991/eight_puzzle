@@ -1,15 +1,10 @@
 #
-# searcher.py (Final Project)
+# searcher.py
 #
 # classes for objects that perform state-space search on Eight Puzzles
 #
 # name: 
 # email:
-#
-# If you worked with a partner, put his or her contact info below:
-# partner's name:
-# partner's email:
-#
 
 import random
 from state import *
@@ -20,14 +15,23 @@ class Searcher:
         This will also be used as a superclass of classes for
         other state-space search algorithms.
     """
-    ### Add your Searcher method definitions here. ###
 
+    def __init__(self, init_state, depth_limit):
+        """
+
+        :param init_state:
+        :param depth_limit:
+        :return:
+        """
+        self.states = []
+        self.states.append(init_state)
+        self.num_tested = 0    # keep track of how many states the Searcher tests
+        self.depth_limit = depth_limit    # how deep in the state-space search tree the Searcher will go
 
     def __repr__(self):
         """ returns a string representation of the Searcher object
             referred to by self.
         """
-        # You should *NOT* change this method.
         s = str(len(self.states)) + ' untested, '
         s += str(self.num_tested) + ' tested, '
         if self.depth_limit == -1:
