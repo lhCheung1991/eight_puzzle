@@ -65,7 +65,15 @@ class Searcher:
         return s
 
     def find_solution(self):
-        pass
+
+        while len(self.states) > 0:
+            curState = self.next_state()
+            if curState.is_goal():
+                return curState
+            else:
+                self.add_states(curState.generate_successors())
+            self.num_tested += 1
+        return None
 
     def __repr__(self):
         """ returns a string representation of the Searcher object
