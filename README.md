@@ -5,6 +5,7 @@ An Eight Puzzle problem solver in Python, using Random Searching, BFS, DFS, Gree
 # Code Example
 ![Alt text](https://github.com/lhCheung1991/eight_puzzle/blob/master/pngs/1.png?raw=true "Optional Title")
 
+# Results of code example
 The string "631074852" represents the initial board
 
 ![Alt text](https://github.com/lhCheung1991/eight_puzzle/blob/master/pngs/2.png?raw=true "Optional Title")
