@@ -18,6 +18,3 @@ The performance of each algorithm
 ![Alt text](https://github.com/lhCheung1991/eight_puzzle/blob/master/pngs/7.png?raw=true "Optional Title")
 
 The path found by BFS, Greedy Searching, A* Searching
-
-![Alt text](https://github.com/lhCheung1991/eight_puzzle/blob/master/pngs/8.png?raw=true "Optional Title")
-![Alt text](https://github.com/lhCheung1991/eight_puzzle/blob/master/pngs/9.png?raw=true "Optional Title")
