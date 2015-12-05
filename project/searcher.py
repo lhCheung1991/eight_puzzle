@@ -154,3 +154,18 @@ class GreedySearcher(Searcher):
         nextState = highestPriority[1]
         self.states.remove(highestPriority)
         return nextState
+
+
+class AStarSearcher(GreedySearcher):
+    """
+    perform A* search, when A* assigns a priority to a state, it also takes into account the cost
+    that has already been expended to get to that state
+    """
+    def priority(self, state):
+        """
+
+        :param state:
+        :return:
+        """
+        priority = -1 * (state.board.num_misplaced() + state.num_moves)
+        return priority
