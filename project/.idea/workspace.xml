@@ -24,10 +24,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="searcher.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="searcher.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/searcher.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.57840234" vertical-offset="719" max-vertical-offset="1485">
+            <state vertical-scroll-proportion="0.0" vertical-offset="809" max-vertical-offset="1485">
               <caret line="74" column="32" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
               <folding>
                 <element signature="e#110#123#0" expanded="true" />
@@ -46,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="state.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="state.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/state.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="479" max-vertical-offset="1500">
-              <caret line="50" column="27" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.8668639" vertical-offset="959" max-vertical-offset="1665">
+              <caret line="103" column="28" selection-start-line="103" selection-start-column="28" selection-end-line="103" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -62,8 +62,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/board.py" />
-        <option value="$PROJECT_DIR$/state.py" />
         <option value="$PROJECT_DIR$/searcher.py" />
+        <option value="$PROJECT_DIR$/state.py" />
       </list>
     </option>
   </component>
@@ -226,21 +226,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/state.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="479" max-vertical-offset="1500">
-          <caret line="50" column="27" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/searcher.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57840234" vertical-offset="719" max-vertical-offset="1485">
+        <state vertical-scroll-proportion="0.0" vertical-offset="809" max-vertical-offset="1485">
           <caret line="74" column="32" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
           <folding>
             <element signature="e#110#123#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/state.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8668639" vertical-offset="959" max-vertical-offset="1665">
+          <caret line="103" column="28" selection-start-line="103" selection-start-column="28" selection-end-line="103" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>

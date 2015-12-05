@@ -92,3 +92,14 @@ class State:
             two [priority, state] pairs with the same priority.
         """
         return True
+
+    def print_moves_to(self):
+
+        if self.predecessor is None:
+            print('initial state:')
+            print(self.board)
+        else:
+            self.predecessor.print_moves_to()
+            print("move the blank " + self.move)
+            print(self.board)
+
