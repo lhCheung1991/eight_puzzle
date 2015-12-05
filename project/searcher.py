@@ -99,3 +99,16 @@ class BFSearcher(Searcher):
         """
         nextState = self.states.pop(0)
         return nextState
+
+
+class DFSearcher(Searcher):
+    """
+    DFSearcher for searcher objects that perform depth-first search (DFS)
+    """
+    def next_state(self):
+        """
+        override the Searcher's next_state()
+        :return:
+        """
+        nextState = self.states.pop(-1)
+        return nextState
