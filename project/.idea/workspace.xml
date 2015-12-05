@@ -39,19 +39,31 @@
       <file leaf-file-name="board.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/board.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1154" max-vertical-offset="1830">
-              <caret line="55" column="18" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1124" max-vertical-offset="1830">
+              <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="state.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="state.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/state.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8668639" vertical-offset="959" max-vertical-offset="1665">
+            <state vertical-scroll-proportion="0.0" vertical-offset="959" max-vertical-offset="1665">
               <caret line="103" column="28" selection-start-line="103" selection-start-column="28" selection-end-line="103" selection-end-column="28" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="eight_puzzle.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/eight_puzzle.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.1982249" vertical-offset="0" max-vertical-offset="1305">
+              <caret line="54" column="36" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="36" />
+              <folding>
+                <element signature="e#106#128#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,9 +73,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/board.py" />
         <option value="$PROJECT_DIR$/searcher.py" />
         <option value="$PROJECT_DIR$/state.py" />
+        <option value="$PROJECT_DIR$/eight_puzzle.py" />
+        <option value="$PROJECT_DIR$/board.py" />
       </list>
     </option>
   </component>
@@ -211,21 +224,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eight_puzzle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1320">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/board.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1154" max-vertical-offset="1830">
-          <caret line="55" column="18" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/searcher.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="809" max-vertical-offset="1485">
@@ -238,9 +236,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/state.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8668639" vertical-offset="959" max-vertical-offset="1665">
+        <state vertical-scroll-proportion="0.0" vertical-offset="959" max-vertical-offset="1665">
           <caret line="103" column="28" selection-start-line="103" selection-start-column="28" selection-end-line="103" selection-end-column="28" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/board.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1124" max-vertical-offset="1830">
+          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eight_puzzle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1982249" vertical-offset="0" max-vertical-offset="1305">
+          <caret line="54" column="36" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="36" />
+          <folding>
+            <element signature="e#106#128#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

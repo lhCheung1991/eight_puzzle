@@ -28,8 +28,8 @@ class Board:
         self.blank_c = -1
 
         for idx, val in enumerate(digitstr):
-            curRow = idx / 3
-            curCol = idx % 3
+            curRow = int(idx / 3)
+            curCol = int(idx % 3)
             self.tiles[curRow][curCol] = int(val)
             if int(val) == 0:
                 self.blank_r = curRow

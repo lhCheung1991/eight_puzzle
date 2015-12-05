@@ -1,14 +1,11 @@
 #
-# eight_puzzle.py (Final Project)
+# eight_puzzle.py
 #
 # driver/test code for state-space search on Eight Puzzles
 #
 # name: 
 # email:
 #
-# If you worked with a partner, put his or her contact info below:
-# partner's name:
-# partner's email:
 #
 
 from searcher import *
@@ -44,6 +41,7 @@ def create_searcher(init_state, algorithm, extra):
         print('unknown algorithm:', algorithm)
 
     return searcher
+
 
 def eight_puzzle(init_boardstr, algorithm, extra=-1):
     """ a driver function for solving Eight Puzzles using state-space search
