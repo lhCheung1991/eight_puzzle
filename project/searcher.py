@@ -88,4 +88,14 @@ class Searcher:
         return s
 
 
-
+class BFSearcher(Searcher):
+    """
+    BFSearcher for searcher objects that perform breadth-first search (BFS)
+    """
+    def next_state(self):
+        """
+        override the Searcher's next_state()
+        :return:
+        """
+        nextState = self.states.pop(0)
+        return nextState
