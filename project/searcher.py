@@ -144,3 +144,13 @@ class GreedySearcher(Searcher):
         :return:
         """
         self.states.append([self.priority(state), state])
+
+    def next_state(self):
+        """
+
+        :return:
+        """
+        highestPriority = max(self.states)
+        nextState = highestPriority[1]
+        self.states.remove(highestPriority)
+        return nextState
