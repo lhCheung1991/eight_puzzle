@@ -105,8 +105,8 @@ class Board:
         """
         misPlacedCount = 0
         for idx in range(9):
-            tmpRow = idx / 3
-            tmpCol = idx % 3
+            tmpRow = int(idx / 3)
+            tmpCol = int(idx % 3)
 
             if self.tiles[tmpRow][tmpCol] != 0 and self.tiles[tmpRow][tmpCol] != idx:
                 misPlacedCount += 1

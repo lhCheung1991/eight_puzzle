@@ -68,11 +68,11 @@ class Searcher:
 
         while len(self.states) > 0:
             curState = self.next_state()
+            self.num_tested += 1
             if curState.is_goal():
                 return curState
             else:
                 self.add_states(curState.generate_successors())
-            self.num_tested += 1
         return None
 
     def __repr__(self):
@@ -112,3 +112,27 @@ class DFSearcher(Searcher):
         """
         nextState = self.states.pop(-1)
         return nextState
+
+
+class GreedySearcher(Searcher):
+    """
+    perform greedy search, uses a heuristic function to estimate the remaining cost
+    needed to get from a given state to the goal state
+    """
+
+    def __init__(self, init_state, heuristic, depth_limit):
+        """ constructor for a GreedySearcher object
+            inputs:
+             * init_state - a State object for the initial state
+             * heuristic - an integer specifying which heuristic
+                            function should be used when computing the priority of a state
+             * depth_limit - the depth limit of the searcher
+        """
+        self.heuristic = heuristic
+        self.states = [[self.priority(init_state), init_state]]    # sublist is a [priority, state] pair
+        self.num_tested = 0
+        self.depth_limit = depth_limit
+
+    def priority(self, state):
+        priority = -1 * state.board.num_misplaced()
+        return priority

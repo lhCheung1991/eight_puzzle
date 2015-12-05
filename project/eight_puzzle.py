@@ -11,6 +11,7 @@
 from searcher import *
 from timer import *
 
+
 def create_searcher(init_state, algorithm, extra):
     """ a function that creates and returns an appropriate
         searcher object, based on the specified inputs. 
@@ -27,12 +28,10 @@ def create_searcher(init_state, algorithm, extra):
     
     if algorithm == 'random':
         searcher = Searcher(init_state, extra)
-## You will uncommment the following lines as you implement
-## other algorithms.
-    #elif algorithm == 'BFS':
-    #    searcher = BFSearcher(init_state, extra)
-    #elif algorithm == 'DFS':
-    #    searcher = DFSearcher(init_state, extra)
+    elif algorithm == 'BFS':
+       searcher = BFSearcher(init_state, extra)
+    elif algorithm == 'DFS':
+       searcher = DFSearcher(init_state, extra)
     #elif algorithm == 'Greedy':
     #    searcher = GreedySearcher(init_state, extra, -1)
     #elif algorithm == 'A*':
