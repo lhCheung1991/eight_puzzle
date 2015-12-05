@@ -1,3 +1,3 @@
 # eight_puzzle
 
-An Eight Puzzle problem solver in Python
+An Eight Puzzle problem solver in Python, 
