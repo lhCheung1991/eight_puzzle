@@ -5,8 +5,6 @@
 #
 # name: 
 # email:
-#
-#
 
 from searcher import *
 from timer import *
@@ -32,10 +30,10 @@ def create_searcher(init_state, algorithm, extra):
        searcher = BFSearcher(init_state, extra)
     elif algorithm == 'DFS':
        searcher = DFSearcher(init_state, extra)
-    #elif algorithm == 'Greedy':
-    #    searcher = GreedySearcher(init_state, extra, -1)
-    #elif algorithm == 'A*':
-    #    searcher = AStarSearcher(init_state, extra, -1)
+    elif algorithm == 'Greedy':
+       searcher = GreedySearcher(init_state, extra, -1)
+    elif algorithm == 'A*':
+       searcher = AStarSearcher(init_state, extra, -1)
     else:  
         print('unknown algorithm:', algorithm)
 

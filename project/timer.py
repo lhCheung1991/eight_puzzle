@@ -2,13 +2,9 @@
 # timer.py
 #
 # A class for objects that can be used to time code execution.
-#
-# Alex Breen, CS 111
-#
-# You should *NOT* need to change the contents of this file.
-#
 
 import time
+
 
 class Timer:
     """A class whose instances store the difference between two moments in time.
