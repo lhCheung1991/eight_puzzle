@@ -136,3 +136,11 @@ class GreedySearcher(Searcher):
     def priority(self, state):
         priority = -1 * state.board.num_misplaced()
         return priority
+
+    def add_state(self, state):
+        """
+
+        :param state:
+        :return:
+        """
+        self.states.append([self.priority(state), state])
