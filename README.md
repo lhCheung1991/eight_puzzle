@@ -9,7 +9,7 @@ An Eight Puzzle problem solver in Python, using Random Searching, BFS, DFS, Gree
 
 There are three heuristic functions for the Greedy Searching and A* Searching, Mismatched Place Tiles, Manhattan Distance, Permutation Inversions, etc. 
 
-The slices above : [Visit](http://ai.stanford.edu/~latombe/cs121/2011/slides/D-heuristic-search.pdf)
+The slices above : [http://ai.stanford.edu/~latombe/cs121/2011/slides/D-heuristic-search.pdf](http://ai.stanford.edu/~latombe/cs121/2011/slides/D-heuristic-search.pdf)
 
 # Code Example
 
