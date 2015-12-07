@@ -139,7 +139,24 @@ class Board:
         calculate the permutation inversions
         :return:
         """
-        pass
+        permutationInversions = 0
+
+        for i in range(8):
+            idxRowI = int(i / 3)
+            idxColI = int(i % 3)
+
+            if self.tiles[idxRowI][idxColI] != 0:
+                for j in range(i + 1, 9):
+                    idxRowJ = int(j / 3)
+                    idxColJ = int(j % 3)
+
+                    if self.tiles[idxRowI][idxColI] > self.tiles[idxRowJ][idxColJ] and self.tiles[idxRowJ][idxColJ] != 0:
+                        permutationInversions += 1
+            else:
+                continue
+
+        return permutationInversions
+
     ###########################heuristic function#################################
 
     def __eq__(self, other):
