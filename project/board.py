@@ -97,6 +97,7 @@ class Board:
     def copy(self):
         return Board(self.digit_string())
 
+    ###########################heuristic function#################################
     def num_misplaced(self):
         """
         counts and returns the number of tiles in the called Board object
@@ -112,6 +113,22 @@ class Board:
                 misPlacedCount += 1
 
         return misPlacedCount
+
+    def num_manhattanDistance(self):
+        """
+        calculate the manhattan distance
+        :return:
+        """
+        manDistance = 0
+
+
+    def num_permutationInversions(self):
+        """
+        calculate the permutation inversions
+        :return:
+        """
+        pass
+    ###########################heuristic function#################################
 
     def __eq__(self, other):
         return self.tiles == other.tiles

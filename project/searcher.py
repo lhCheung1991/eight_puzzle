@@ -134,7 +134,16 @@ class GreedySearcher(Searcher):
         self.depth_limit = depth_limit
 
     def priority(self, state):
-        priority = -1 * state.board.num_misplaced()
+
+        priority = 0
+
+        # Manhattan distance
+
+        if self.heuristic == 1:
+            pass
+        else:
+            priority = -1 * state.board.num_misplaced()
+
         return priority
 
     def add_state(self, state):
@@ -167,5 +176,11 @@ class AStarSearcher(GreedySearcher):
         :param state:
         :return:
         """
-        priority = -1 * (state.board.num_misplaced() + state.num_moves)
+        priority = 0
+
+        if self.heuristic == 1:
+            pass
+        else:
+            priority = -1 * (state.board.num_misplaced() + state.num_moves)
+
         return priority

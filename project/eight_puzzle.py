@@ -76,3 +76,60 @@ def eight_puzzle(init_boardstr, algorithm, extra=-1):
         show_steps = input('Show the moves (y/n)? ')
         if show_steps == 'y':
             soln.print_moves_to()
+
+
+def process_file(filename, algorithm, extra=-1):
+    """
+
+    :param filename:
+    :param algorithm:
+    :param extra:
+    :return:
+    """
+    try:
+        lstPuzzles = []
+        with open(filename, "r") as inFile:
+            lstPuzzles = inFile.readlines()
+
+        lstPuzzles = [line.strip("\n") for line in lstPuzzles]
+
+
+        solvedPuzzleCnt = 0
+        averMoves = 0
+        averTestedMoves = 0
+        for puzzle in lstPuzzles:
+            initBoard = Board(puzzle)
+            initState = State(initBoard, None, "init")
+
+            searcher = create_searcher(initState, algorithm, extra)
+            if searcher is None:
+                return
+
+            solution = None
+            try:
+                solution = searcher.find_solution()
+            except KeyboardInterrupt:
+                # print('Search terminated.')
+                pass
+                print(puzzle + ": search terminated, no solution")
+                continue
+
+            if solution is not None:
+                print(puzzle + ": " + str(solution.num_moves) + " moves, " +
+                      str(searcher.num_tested) + " states tested")
+                solvedPuzzleCnt += 1
+                averMoves += solution.num_moves
+                averTestedMoves += searcher.num_tested
+            else:
+                print(puzzle + ": no solution")
+
+        print("")
+        print("solved " + str(solvedPuzzleCnt) + " puzzles")
+        if solvedPuzzleCnt != 0:
+            print("averages: " + str(averMoves / solvedPuzzleCnt) + " moves, " +
+                  str(averTestedMoves / solvedPuzzleCnt) + " states tested")
+
+    except FileNotFoundError:
+        pass
+
+
