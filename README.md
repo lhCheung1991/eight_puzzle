@@ -2,6 +2,15 @@
 
 An Eight Puzzle problem solver in Python, using Random Searching, BFS, DFS, Greedy Searching, A* Searching.
 
+# Heuristic Functions the Greedy Searching and A* Searching used
+
+![Alt text](https://github.com/lhCheung1991/eight_puzzle/blob/master/pngs/heuristic1.png?raw=true "Optional Title")
+![Alt text](https://github.com/lhCheung1991/eight_puzzle/blob/master/pngs/heuristic2.png?raw=true "Optional Title")
+
+There are three heuristic functions for the Greedy Searching and A* Searching, Mismatched Place Tiles, Manhattan Distance, Permutation Inversions, etc. 
+
+The slices above : ![Alt text](http://ai.stanford.edu/~latombe/cs121/2011/slides/D-heuristic-search.pdf)
+
 # Code Example
 
 ![Alt text](https://github.com/lhCheung1991/eight_puzzle/blob/master/pngs/1.png?raw=true "Optional Title")
