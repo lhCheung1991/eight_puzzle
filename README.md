@@ -13,7 +13,7 @@ The slices above : [http://ai.stanford.edu/~latombe/cs121/2011/slides/D-heuristi
 
 # Code Example
 
-![Alt text](https://github.com/lhCheung1991/eight_puzzle/blob/master/pngs/1.png?raw=true "Optional Title")
+![Alt text](https://github.com/lhCheung1991/eight_puzzle/blob/master/pngs/code_main.png?raw=true "Optional Title")
 
 The string "631074852" represents the initial board
 
