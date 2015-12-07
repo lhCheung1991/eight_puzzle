@@ -120,7 +120,19 @@ class Board:
         :return:
         """
         manDistance = 0
+        for idx in range(9):
+            idxRow = int(idx / 3)
+            idxCol = int(idx % 3)
 
+            if self.tiles[idxRow][idxCol] != 0 and self.tiles[idxRow][idxCol] != idx:
+                curDigit = self.tiles[idxRow][idxCol]
+                goalRow = int(curDigit / 3)
+                goalCol = int(curDigit % 3)
+
+                manDistance += abs(idxRow - goalRow)
+                manDistance += abs(idxCol - goalCol)
+
+        return manDistance
 
     def num_permutationInversions(self):
         """

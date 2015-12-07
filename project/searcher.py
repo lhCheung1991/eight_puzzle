@@ -137,10 +137,10 @@ class GreedySearcher(Searcher):
 
         priority = 0
 
-        # Manhattan distance
-
-        if self.heuristic == 1:
-            pass
+        if self.heuristic == 1:    # Manhattan distance
+            priority = -1 * state.board.num_manhattanDistance()
+        elif self.heuristic == 2:    # permutation inversions
+            priority = -1 * state.board.num_permutationInversions()
         else:
             priority = -1 * state.board.num_misplaced()
 
@@ -179,7 +179,9 @@ class AStarSearcher(GreedySearcher):
         priority = 0
 
         if self.heuristic == 1:
-            pass
+            priority = -1 * (state.board.num_manhattanDistance() + state.num_moves)
+        elif self.heuristic == 2:
+            priority = -1 * (state.board.num_permutationInversions() + state.num_moves)
         else:
             priority = -1 * (state.board.num_misplaced() + state.num_moves)
 
