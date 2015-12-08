@@ -11,6 +11,10 @@ There are three heuristic functions for the Greedy Searching and A* Searching, M
 
 The slices above : [http://ai.stanford.edu/~latombe/cs121/2011/slides/D-heuristic-search.pdf](http://ai.stanford.edu/~latombe/cs121/2011/slides/D-heuristic-search.pdf)
 
+![Alt text](https://github.com/lhCheung1991/eight_puzzle/blob/master/pngs/misplace.png?raw=true "Optional Title")
+![Alt text](https://github.com/lhCheung1991/eight_puzzle/blob/master/pngs/manhattan.png?raw=true "Optional Title")
+![Alt text](https://github.com/lhCheung1991/eight_puzzle/blob/master/pngs/permutation_inversion.png?raw=true "Optional Title")
+
 # Code Example
 
 ![Alt text](https://github.com/lhCheung1991/eight_puzzle/blob/master/pngs/code_main.png?raw=true "Optional Title")
